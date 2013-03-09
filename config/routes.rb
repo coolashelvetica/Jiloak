@@ -1,4 +1,22 @@
 Jiloak::Application.routes.draw do
+  get "faqs/index"
+
+  get "privacy/index"
+
+  get "careers/index"
+
+  get "resources/index"
+
+  get "about/index"
+
+  get "contact/index"
+
+  get "clients/index"
+
+  get "services/index"
+
+  get "shared/_nav"
+
   get "home/index"
 
   # The priority is based upon order of creation:

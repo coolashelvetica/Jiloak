@@ -1,0 +1,17 @@
+<div class="navigation-phone visible-phone" id="opacity-80">
+	<!-- <div class="login-drop">Login</div>
+	<div class="login-drop-down">Login</div>
+	<div class="login-box"></div> --><%= link_to  root_path do %>
+			   <img class="logo" src="/assets/full-logo.png">
+			<% end %>
+<%= nav_bar :fixed => :top,  :responsive => true do %>
+
+    <%= menu_group do %>
+
+        <%= menu_item "What we do", about_index_path %>
+        <%= menu_item "Services we offer", services_index_path %>
+        <%= menu_item "Clients we serve", clients_index_path %>
+        <%= menu_item "Contact Us", contact_index_path %>
+    <% end %>
+<% end %>
+</div>

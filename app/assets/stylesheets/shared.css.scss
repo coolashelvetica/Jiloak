@@ -1,0 +1,392 @@
+// $$$$$$$\                   $$\    $$\         $$\          
+// $$  __$$\                  $$ |   \__|        $$ |         
+// $$ |  $$ $$$$$$\  $$$$$$\$$$$$$\  $$\ $$$$$$\ $$ |$$$$$$$\ 
+// $$$$$$$  \____$$\$$  __$$\_$$  _| $$ |\____$$\$$ $$  _____|
+// $$  ____/$$$$$$$ $$ |  \__|$$ |   $$ |$$$$$$$ $$ \$$$$$$\  
+// $$ |    $$  __$$ $$ |      $$ |$$\$$ $$  __$$ $$ |\____$$\ 
+// $$ |    \$$$$$$$ $$ |      \$$$$  $$ \$$$$$$$ $$ $$$$$$$  |
+// \__|     \_______\__|       \____/\__|\_______\__\_______/ 
+                                                           
+                                                           
+                                                           
+// Place all the styles related to the shared controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+@import "bootstrap-responsive";
+@import "compass/css3";
+
+body
+{
+	@media (max-width: 767px) { padding-left:0px; padding-right:0px; }
+}
+
+@media (max-width: 979px){
+.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+padding: 70px;
+padding-bottom:0;
+}}
+// $$\   $$\                   
+// $$$\  $$ |                  
+// $$$$\ $$ |$$$$$$\$$\    $$\ 
+// $$ $$\$$ |\____$$\$$\  $$  |
+// $$ \$$$$ |$$$$$$$ \$$\$$  / 
+// $$ |\$$$ $$  __$$ |\$$$  /  
+// $$ | \$$ \$$$$$$$ | \$  /   
+// \__|  \__|\_______|  \_/    
+
+                            
+#header
+{
+	@media (max-width: 767px){
+			z-index:3;position:relative;}
+
+	.logo
+	{
+		width: 440px;
+
+		float:left;
+
+		img
+		{
+			width:200px;
+
+
+
+		}
+	}
+
+	.navigation
+	{
+		width: 100%;
+
+		float: right;
+		position: fixed;
+		top:0px;
+		z-index: 11px;
+		background-color:white;
+		box-shadow: 0 0 3px rgba(0,0,0,.7);
+		text-align: center;
+
+		.login-drop 
+		{
+			background-color: #c10000;
+			position: fixed;
+			right: 10px;
+			color: white;
+			text-transform: uppercase;
+			padding: 7px;
+			cursor:pointer;
+			font-size:11px;
+		}
+		.login-drop-down 
+		{
+			background-color: #c10000;
+			position: fixed;
+			right: 10px;
+			color: white;
+			text-transform: uppercase;
+			padding: 7px;
+			cursor:pointer;
+			font-size:11px;
+			display: none;
+		}
+
+		.login-box 
+		{
+			background-color: #c10000;
+			position: fixed;
+			width: 211px;
+			height: 127px;
+			right: 10px;
+			color: white;
+			text-transform: uppercase;
+			padding: 7px;
+			cursor:pointer;
+			z-index: 1;
+			top:-135px;
+		}
+
+
+
+		ul
+		{
+			list-style: none;
+			margin:0px;
+
+			li
+			{
+				display: inline-block;
+				padding:10px;
+				
+				img
+				{
+					width:200px;
+					margin-right: -43px;
+				}
+
+				a
+				{
+					color:$black;
+
+					&:hover
+					{
+						color:#c10000;
+						text-decoration: none;
+					}
+				}
+
+				&.last
+				{
+					border-right:none;
+				}
+
+				.nav_lucida 
+				{
+					font-family: 'AaarghNormal',Arial, sans-serif;
+					text-transform: uppercase;
+					font-style: italic;
+					font-size: 17px;
+					line-height: 17px;
+					font-weight: 200;
+				}
+
+				.nav_cambria 
+				{
+					font-family: Cambria, arial, sans-serif;
+					text-transform: lowercase;
+					font-size: 17px;
+					line-height: 17px;
+				}
+
+			}
+		}
+		
+	}
+// $$\   $$\                         $$$$$$$\ $$\                                  
+// $$$\  $$ |                        $$  __$$\$$ |                                 
+// $$$$\ $$ |$$$$$$\$$\    $$\       $$ |  $$ $$$$$$$\  $$$$$$\ $$$$$$$\  $$$$$$\  
+// $$ $$\$$ |\____$$\$$\  $$  |      $$$$$$$  $$  __$$\$$  __$$\$$  __$$\$$  __$$\ 
+// $$ \$$$$ |$$$$$$$ \$$\$$  /       $$  ____/$$ |  $$ $$ /  $$ $$ |  $$ $$$$$$$$ |
+// $$ |\$$$ $$  __$$ |\$$$  /        $$ |     $$ |  $$ $$ |  $$ $$ |  $$ $$   ____|
+// $$ | \$$ \$$$$$$$ | \$  /         $$ |     $$ |  $$ \$$$$$$  $$ |  $$ \$$$$$$$\ 
+// \__|  \__|\_______|  \_/          \__|     \__|  \__|\______/\__|  \__|\_______|
+                                                                                
+                                                                                
+
+	.navigation-phone
+	{
+		
+			img
+			{	
+
+				width:200px;
+			}
+			
+		
+		width: 95%;
+		// left:0px;
+		position: fixed;
+		// top:0px;
+		// z-index: 11px;
+
+		.login-drop 
+		{
+			background-color: #c10000;
+			position: fixed;
+			right: 10px;
+			color: white;
+			text-transform: uppercase;
+			padding: 7px;
+			cursor:pointer;
+			font-size:8px;
+		}
+		.login-drop-down 
+		{
+			background-color: #c10000;
+			position: fixed;
+			right: 10px;
+			color: white;
+			text-transform: uppercase;
+			padding: 7px;
+			cursor:pointer;
+			font-size:8px;
+			display: none;
+		}
+
+		.login-box 
+		{
+			background-color: #c10000;
+			position: fixed;
+			width: 211px;
+			height: 127px;
+			right: 10px;
+			color: white;
+			text-transform: uppercase;
+			padding: 7px;
+			cursor:pointer;
+			z-index: 1;
+			top:-135px;
+		}
+
+
+
+		}
+}                       
+  
+// $$$$$$$$\                $$\                       
+// $$  _____|               $$ |                      
+// $$ |   $$$$$$\  $$$$$$\$$$$$$\   $$$$$$\  $$$$$$\  
+// $$$$$\$$  __$$\$$  __$$\_$$  _| $$  __$$\$$  __$$\ 
+// $$  __$$ /  $$ $$ /  $$ |$$ |   $$$$$$$$ $$ |  \__|
+// $$ |  $$ |  $$ $$ |  $$ |$$ |$$\$$   ____$$ |      
+// $$ |  \$$$$$$  \$$$$$$  |\$$$$  \$$$$$$$\$$ |      
+// \__|   \______/ \______/  \____/ \_______\__|      
+                                                   
+#footer
+{
+
+
+	.logo
+	{
+		width: 440px;
+		float:left;
+
+		img
+		{
+			width:200px;
+		}
+	}
+
+	.navigation-footer
+	{
+		width: 100%;
+
+		float: right;
+		position: fixed;
+		bottom:0px;
+		z-index: 11px;
+		background-color:white;
+		box-shadow: 0 0 3px rgba(0,0,0,.7);
+		text-align: center;
+
+		ul
+		{
+			list-style: none;
+			margin:0px;
+
+			li
+			{
+				display: inline-block;
+				padding:10px;
+				
+				img
+				{
+					width:45px;
+				}
+
+				a
+				{
+					color:$black;
+
+					&:hover
+					{
+						color:#c10000;
+						text-decoration: none;
+					}
+				}
+
+				&.last
+				{
+					border-right:none;
+				}
+
+				.nav_cambria 
+				{
+					font-family: Cambria, arial, sans-serif;
+					font-size: 12px;
+					line-height: 17px;
+				}
+
+			}
+		}
+		
+	}
+
+	// $$$$$$$$\                $$\                             $$$$$$$\ $$\                                  
+// $$  _____|               $$ |                            $$  __$$\$$ |                                 
+// $$ |   $$$$$$\  $$$$$$\$$$$$$\   $$$$$$\  $$$$$$\        $$ |  $$ $$$$$$$\  $$$$$$\ $$$$$$$\  $$$$$$\  
+// $$$$$\$$  __$$\$$  __$$\_$$  _| $$  __$$\$$  __$$\       $$$$$$$  $$  __$$\$$  __$$\$$  __$$\$$  __$$\ 
+// $$  __$$ /  $$ $$ /  $$ |$$ |   $$$$$$$$ $$ |  \__|      $$  ____/$$ |  $$ $$ /  $$ $$ |  $$ $$$$$$$$ |
+// $$ |  $$ |  $$ $$ |  $$ |$$ |$$\$$   ____$$ |            $$ |     $$ |  $$ $$ |  $$ $$ |  $$ $$   ____|
+// $$ |  \$$$$$$  \$$$$$$  |\$$$$  \$$$$$$$\$$ |            $$ |     $$ |  $$ \$$$$$$  $$ |  $$ \$$$$$$$\ 
+// \__|   \______/ \______/  \____/ \_______\__|            \__|     \__|  \__|\______/\__|  \__|\_______|
+
+.navigation-footer-phone
+	{
+		width: 100%;
+
+		float: right;
+		position: fixed;
+		bottom:0px;
+		left:0px;
+		z-index: 11px;
+		background-color:white;
+		box-shadow: 0 0 3px rgba(0,0,0,.7);
+		text-align: center;
+
+		ul
+		{
+			list-style: none;
+			margin:0px;
+
+			li
+			{
+				display: inline-block;
+				padding:10px;
+				
+				img
+				{
+					width:45px;
+				}
+
+				a
+				{
+					color:$black;
+
+					&:hover
+					{
+						color:#c10000;
+						text-decoration: none;
+					}
+				}
+
+				&.last
+				{
+					border-right:none;
+				}
+
+				.nav_cambria 
+				{
+					font-family: Cambria, arial, sans-serif;
+					font-size: 12px;
+					line-height: 17px;
+				}
+
+			}
+		}
+		
+	}
+ 
+                                                   
+} 
+
+
+
+
+
+
+
+
+                                                                                                       
+

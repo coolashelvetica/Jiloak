@@ -1,3 +1,358 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "mixins";
+
+
+// $$$$$$$\                $$\          
+// $$  __$$\               $$ |         
+// $$ |  $$ |$$$$$$\  $$$$$$$ $$\   $$\ 
+// $$$$$$$\ $$  __$$\$$  __$$ $$ |  $$ |
+// $$  __$$\$$ /  $$ $$ /  $$ $$ |  $$ |
+// $$ |  $$ $$ |  $$ $$ |  $$ $$ |  $$ |
+// $$$$$$$  \$$$$$$  \$$$$$$$ \$$$$$$$ |
+// \_______/ \______/ \_______|\____$$ |
+//                            $$\   $$ |
+//                            \$$$$$$  |
+//                             \______/ 
+body
+{
+	background: url('/assets/brillant.png');
+	@media (max-width: 767px) { padding-left:0px; padding-right:0px; }
+	padding-top:25px;
+	height:800px;
+}
+
+
+
+.holder
+	{
+	 	width:80%;
+	 	height:400px;
+		top:190px;
+		position: fixed;
+	 	color:black;
+	 	padding:15px;
+	 	left:100px;
+
+	 	h1
+	 	{
+	 		font-family: Cambria, arial, sans-serif;
+					font-style: italic;
+					font-weight: 200;
+
+	 	}
+
+	 	p
+	 	{
+	 		font-size: 15px;
+	 	}
+	}
+.content
+{
+	height:600px;
+	
+	padding-left:125px;
+	padding-top:250px;
+	padding-right:125px;
+	z-index: -1;
+	position: relative;
+	top:-30px;
+
+	
+
+	&.home
+	{
+		background: url('/assets/hero2.jpg');
+		@media (min-width: 768px) and (max-width: 979px) { background-size:200%; }
+		@media (max-width: 767px) { background-size:400%; }
+		background-size:100%;
+		@include opacity(0.6);
+		background-repeat:no-repeat;
+	}
+
+	&.about
+	{
+		background: url('/assets/hero1.jpg');
+		@media (min-width: 768px) and (max-width: 979px) { background-size:200%; }
+		@media (max-width: 767px) { background-size:400%; }
+		background-size:100%;
+		@include opacity(0.4);
+		background-repeat:no-repeat;
+	}
+
+	&.services
+	{
+		background: url('/assets/hero4.jpg');
+		@media (min-width: 768px) and (max-width: 979px) { background-size:200%; }
+		@media (max-width: 767px) { background-size:400%; }
+		background-size:100%;
+		@include opacity(0.4);
+		background-repeat:no-repeat;
+	}
+	&.clients
+	{
+		background: url('/assets/hero3.jpg');
+		@media (min-width: 768px) and (max-width: 979px) { background-size:200%; }
+		@media (max-width: 767px) { background-size:400%; }
+		background-size:100%;
+		@include opacity(0.4);
+		background-repeat:no-repeat;
+	}
+	&.contact
+	{
+		background: url('/assets/hero5.jpeg');
+		@media (min-width: 768px) and (max-width: 979px) { background-size:200%; }
+		@media (max-width: 767px) { background-size:400%; }
+		background-size:100%;
+		@include opacity(0.4);
+		background-repeat:no-repeat;
+	}
+	&.resources
+	{
+		background: url('/assets/hero6.jpg');
+		@media (min-width: 768px) and (max-width: 979px) { background-size:200%; }
+		@media (max-width: 767px) { background-size:400%; }
+		background-size:100%;
+		background-repeat:no-repeat;
+		@include opacity(0.4);
+	}
+}
+
+
+.services-wrapper
+{
+		height: 400px;
+		top: 150px;
+		position: fixed;
+		color: black;
+		padding: 15px;
+		left: 100px;
+		z-index: 0;
+		float:left;
+		@media (max-width: 767px) { left:9px; top:140px; position: relative}
+	
+	div
+	{
+			display: block;
+			position: relative;
+			width: 214px;
+			height: 98px;
+			font-size: 17px;
+			line-height: 31px;
+			text-transform: uppercase;
+			padding-left: 15px;
+			padding-right: 15px;
+			margin-bottom: 5px;
+			z-index: 2;
+			cursor: pointer;
+
+			@media (max-width: 767px)
+			{
+				display: block;
+				position: relative;
+				width: 88px;
+				height: 50px;
+				font-size: 11px;
+				line-height: 15px;
+				text-transform: uppercase;
+				padding-left: 15px;
+				padding-right: 15px;
+				margin-bottom: 10px;
+				cursor: pointer; }
+			
+
+			&.service-red
+			{
+				background-color: #c10;
+				color:#fff;
+
+			}
+
+			&.service-gray
+			{
+				background-color: #313030;
+				color:#fff;
+			}
+
+			&.service-white
+			{
+				&.account-box
+				{
+					background-color: #fff;
+					color:#000;
+					font-size:12px;
+					line-height: 20px;
+					width: 710px;
+					padding-top:15px;
+					height:284px;
+					display:none;
+					top: -182px;
+					left: 210px;
+
+				}
+
+				&.payroll-box
+				{
+					background-color: #fff;
+					color:#000;
+					font-size:12px;
+					line-height: 20px;
+					width: 710px;
+					padding-top:15px;
+					height:284px;
+					display:none;
+					top: -300px;
+					left: 250px;
+				}
+
+				&.technology-box
+				{
+					background-color: #fff;
+					color:#000;
+					font-size:12px;
+					line-height: 20px;
+					width: 710px;
+					padding-top:15px;
+					height:284px;
+					display:none;
+					top: -59px;
+					left: 215px;
+				}
+				
+
+			}
+
+		
+	}
+
+}
+
+
+
+.account-content
+{
+	display:none;
+	height: 375px;
+	top: 165px;
+	position: fixed;
+	color: black;
+	padding: 15px;
+	left: 393px;
+	float: right;
+	width: 57%;
+	background-color: white;
+@media (max-width: 767px)
+			{
+	display: none;
+height: 200px;
+top: 155px;
+position: fixed;
+color: black;
+padding: 15px;
+left: 150px;
+float: right;
+width: 40%;
+background-color: white;
+overflow-y:scroll;
+}
+}
+
+.manage-content
+{
+	display:none;
+	height: 375px;
+	top: 165px;
+	position: fixed;
+	color: black;
+	padding: 15px;
+	left: 393px;
+	float: right;
+	width: 57%;
+	background-color: white;
+
+	@media (max-width: 767px)
+			{
+	display: none;
+height: 200px;
+top: 155px;
+position: fixed;
+color: black;
+padding: 15px;
+left: 150px;
+float: right;
+width: 40%;
+background-color: white;
+overflow-y:scroll;
+}
+}
+
+
+.payroll-content
+{
+	display:none;
+	height: 375px;
+	top: 165px;
+	position: fixed;
+	color: black;
+	padding: 15px;
+	left: 393px;
+	float: right;
+	width: 57%;
+	background-color: white;
+	@media (max-width: 767px)
+			{
+	display: none;
+height: 200px;
+top: 155px;
+position: fixed;
+color: black;
+padding: 15px;
+left: 150px;
+float: right;
+width: 40%;
+background-color: white;
+overflow-y:scroll;
+}
+}
+
+
+.technology-content
+{
+	display:none;
+	height: 375px;
+	top: 165px;
+	position: fixed;
+	color: black;
+	padding: 15px;
+	left: 393px;
+	float: right;
+	width: 57%;
+	background-color: white;
+	z-index:-1;
+	@media (max-width: 767px)
+			{
+	display: none;
+height: 200px;
+top: 155px;
+position: fixed;
+color: black;
+padding: 15px;
+left: 150px;
+float: right;
+width: 40%;
+background-color: white;
+overflow-y:scroll;
+padding-bottom:10px;
+}
+}
+
+
+
+
+
+
+
+
+
+

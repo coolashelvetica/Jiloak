@@ -18,6 +18,7 @@ group :assets do
   gem 'bootstrap-sass', '~> 2.3.0.1'
   gem 'simple_form'
   gem 'country_select'
+  gem 'rails_bootstrap_navbar'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 

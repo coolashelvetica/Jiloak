@@ -1,0 +1,140 @@
+@import "compass/css3";
+
+
+// $$\      $$\$$\         $$\                   
+// $$$\    $$$ \__|        \__|                  
+// $$$$\  $$$$ $$\$$\   $$\$$\$$$$$$$\  $$$$$$$\ 
+// $$\$$\$$ $$ $$ \$$\ $$  $$ $$  __$$\$$  _____|
+// $$ \$$$  $$ $$ |\$$$$  /$$ $$ |  $$ \$$$$$$\  
+// $$ |\$  /$$ $$ |$$  $$< $$ $$ |  $$ |\____$$\ 
+// $$ | \_/ $$ $$ $$  /\$$\$$ $$ |  $$ $$$$$$$  |
+// \__|     \__\__\__/  \__\__\__|  \__\_______/ 
+                                              
+                                              
+                                              
+//                                     $$\  $$\              
+//                                     \__| $$ |             
+//  $$$$$$\  $$$$$$\  $$$$$$\  $$$$$$$\$$\$$$$$$\  $$\   $$\ 
+// $$  __$$\$$  __$$\ \____$$\$$  _____$$ \_$$  _| $$ |  $$ |
+// $$ /  $$ $$ /  $$ |$$$$$$$ $$ /     $$ | $$ |   $$ |  $$ |
+// $$ |  $$ $$ |  $$ $$  __$$ $$ |     $$ | $$ |$$\$$ |  $$ |
+// \$$$$$$  $$$$$$$  \$$$$$$$ \$$$$$$$\$$ | \$$$$  \$$$$$$$ |
+//  \______/$$  ____/ \_______|\_______\__|  \____/ \____$$ |
+//          $$ |                                   $$\   $$ |
+//          $$ |                                   \$$$$$$  |
+//          \__|                                    \______/ 
+
+.opacity-example {
+  background: red;
+  width: 40px;
+  height: 40px;
+  float: left; }
+ 
+#opacity-10 {
+  @include opacity(0.1); }
+
+  #opacity-50 {
+  @include opacity(0.5); }
+ 
+#opacity-20 {
+  @include opacity(0.2); }
+  #opacity-30 {
+  @include opacity(0.3); }
+ 
+#opacity-70 {
+  @include opacity(0.7); }
+
+  #opacity-80 {
+  @include opacity(0.8); }
+  #opacity-90 {
+  @include opacity(0.9); }
+ 
+#opaque {
+  @include opaque; }
+ 
+#transparent {
+  @include transparent}
+
+
+// $$\                              $$\                                                $$\$$\                   
+// $$ |                             $$ |                                               $$ \__|                  
+// $$$$$$$\  $$$$$$\  $$$$$$\  $$$$$$$ |$$$$$$\  $$$$$$\         $$$$$$\ $$$$$$\  $$$$$$$ $$\$$\   $$\ $$$$$$$\ 
+// $$  __$$\$$  __$$\$$  __$$\$$  __$$ $$  __$$\$$  __$$\$$$$$$\$$  __$$\\____$$\$$  __$$ $$ $$ |  $$ $$  _____|
+// $$ |  $$ $$ /  $$ $$ |  \__$$ /  $$ $$$$$$$$ $$ |  \__\______$$ |  \__$$$$$$$ $$ /  $$ $$ $$ |  $$ \$$$$$$\  
+// $$ |  $$ $$ |  $$ $$ |     $$ |  $$ $$   ____$$ |            $$ |    $$  __$$ $$ |  $$ $$ $$ |  $$ |\____$$\ 
+// $$$$$$$  \$$$$$$  $$ |     \$$$$$$$ \$$$$$$$\$$ |            $$ |    \$$$$$$$ \$$$$$$$ $$ \$$$$$$  $$$$$$$  |
+// \_______/ \______/\__|      \_______|\_______\__|            \__|     \_______|\_______\__|\______/\_______/ 
+                                                                                                             
+                                                                                                             
+                                                                                                             
+
+ 
+.border-radius-example {
+  width: 125px;
+  height: 125px;
+  background: red;
+  margin: 20px;
+  float: left;
+  padding: 5px; }
+ 
+#border-radius {
+  @include border-radius(25px); }
+ 
+#border-radius-top-left {
+  @include border-top-left-radius(25px); }
+ 
+#border-radius-top-right {
+  @include border-top-right-radius(25px); }
+ 
+#border-radius-bottom-left {
+  @include border-bottom-left-radius(25px); }
+ 
+#border-radius-bottom-right {
+  @include border-bottom-right-radius(25px); }
+ 
+#border-radius-top {
+  @include border-top-radius(25px); }
+ 
+#border-radius-bottom {
+  @include border-bottom-radius(25px); }
+ 
+#border-radius-left {
+  @include border-left-radius(25px); }
+ 
+#border-radius-right {
+  @include border-right-radius(25px); }
+ 
+#border-radius-combo {
+  @include border-corner-radius(top, left, 40px);
+  @include border-corner-radius(top, right, 5px);
+  @include border-corner-radius(bottom, left, 15px);
+  @include border-corner-radius(bottom, right, 30px);
+}
+
+//    $$$$$$\ $$\         $$\               $$\       $$\   $$\         $$\                                     
+// $$  __$$\$$ |        $$ |              $$ |      $$ |  $$ |        $$ |                                    
+// $$ /  \__$$ |$$$$$$\ $$$$$$$\  $$$$$$\ $$ |      $$ |  $$ |$$$$$$\ $$ |$$$$$$\  $$$$$$\  $$$$$$\  $$$$$$$\ 
+// $$ |$$$$\$$ $$  __$$\$$  __$$\ \____$$\$$ |      $$$$$$$$ $$  __$$\$$ $$  __$$\$$  __$$\$$  __$$\$$  _____|
+// $$ |\_$$ $$ $$ /  $$ $$ |  $$ |$$$$$$$ $$ |      $$  __$$ $$$$$$$$ $$ $$ /  $$ $$$$$$$$ $$ |  \__\$$$$$$\  
+// $$ |  $$ $$ $$ |  $$ $$ |  $$ $$  __$$ $$ |      $$ |  $$ $$   ____$$ $$ |  $$ $$   ____$$ |      \____$$\ 
+// \$$$$$$  $$ \$$$$$$  $$$$$$$  \$$$$$$$ $$ |      $$ |  $$ \$$$$$$$\$$ $$$$$$$  \$$$$$$$\$$ |     $$$$$$$  |
+//  \______/\__|\______/\_______/ \_______\__|      \__|  \__|\_______\__$$  ____/ \_______\__|     \_______/ 
+//                                                                       $$ |                                 
+//                                                                       $$ |                                 
+//                                                                       \__|                                 
+
+  .clear
+{
+	&.left
+	{
+		clear:left;
+	}
+	&.right
+	{
+		clear:right;
+	}
+	&.both
+	{
+		clear:both;
+	}
+}
